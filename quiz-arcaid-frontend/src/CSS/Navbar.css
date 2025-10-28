@@ -1,0 +1,96 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation Links */
+.navopt {
+  display: flex;
+  gap: 20px;
+}
+
+.nice {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nice:hover {
+  background-color: #6447bc;
+  color: #fff;
+}
+
+/* Account icon */
+.accountlogo {
+  font-size: 1.5rem;
+  color: #6447bc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.accountlogo:hover {
+  transform: scale(1.1);
+}
+
+/* === Mobile === */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #6447bc;
+}
+
+@media (max-width: 768px) {
+  .navopt {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+  }
+
+  .navopt.show {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 16px;
+  }
+
+  .accountlogo {
+    position: absolute;
+    right: 15%;
+    top: 18px;
+  }
+
+  .logo {
+    margin: auto;
+  }
+}

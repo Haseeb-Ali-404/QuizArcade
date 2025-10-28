@@ -1,0 +1,75 @@
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  color: #6447bc;
+  font-size: 28px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #6447bc;
+}
+
+.login-button {
+  padding: 12px;
+  background-color: #6447bc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #7e5ef2;
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-footer a {
+  color: #6447bc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}

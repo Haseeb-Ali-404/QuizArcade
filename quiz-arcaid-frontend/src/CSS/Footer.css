@@ -1,0 +1,56 @@
+/* Footer.css */
+
+footer {
+  background-color: #222;
+  color: #eee;
+  padding: 20px 5%;
+  text-align: center;
+}
+
+.panel2 h4 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.panel2 a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.connect {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.connect p {
+  flex-basis: 100%;
+  margin-bottom: 8px;
+}
+
+.connect a {
+  font-size: 1.2rem;
+  color: #eee;
+  transition: color 0.3s ease;
+}
+
+.connect a:hover {
+  color: #ffd700;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 600px) {
+  .panel2 h4 {
+    font-size: 0.9rem;
+  }
+
+  .connect {
+    gap: 14px;
+  }
+
+  .connect a {
+    font-size: 1rem;
+  }
+}

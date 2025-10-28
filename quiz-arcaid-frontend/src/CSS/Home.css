@@ -1,0 +1,215 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Hero Section === */
+.hero-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #ece9f1, #f3f4ff);
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-bg {
+  flex: 1 1 450px;
+}
+
+.hero-bg h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.hero-opt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-opt button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.Conduct,
+.Attempt {
+  background-color: #6447bc;
+}
+
+.hero-opt button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.hero-img {
+  flex: 1 1 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img .img {
+  max-width: 100%;
+}
+
+.hero-img-icon {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* === Animation Section === */
+.hero-animation-div {
+  background: #f1f0fc;
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.hero-animation-v2 iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.hero-animation-v2 h1 {
+  margin-top: 20px;
+  color: #6447bc;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* === Importance Section === */
+.impback {
+  background: #fff;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.importance h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.importance p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* === Customize & Dashboard Sections === */
+.customize,
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 5%;
+  flex-wrap: wrap;
+  background-color: #fcfcff;
+}
+
+.customizepic,
+.dashpic {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.customizepic img,
+.dashpic img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(100, 71, 188, 0.2);
+}
+
+.cuscontent,
+.dashcontent {
+  flex: 1 1 400px;
+  max-width: 520px;
+}
+
+.custh2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #362a85;
+}
+
+.cuscontent p,
+.dashcontent p {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 1024px) {
+  .hero-bg h2 {
+    font-size: 1.8rem;
+  }
+
+  .custh2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-sec,
+  .customize,
+  .dashboard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-bg,
+  .cuscontent,
+  .dashcontent {
+    text-align: center;
+  }
+
+  .hero-opt {
+    justify-content: center;
+  }
+
+  .hero-img-icon,
+  .customizepic img,
+  .dashpic img {
+    margin-top: 20px;
+  }
+
+  .hero-animation-v2 h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-opt button {
+    flex: 1 1 100%;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .custh2,
+  .importance h2 {
+    font-size: 1.5rem;
+  }
+}

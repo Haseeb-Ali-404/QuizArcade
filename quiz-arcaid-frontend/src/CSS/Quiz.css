@@ -1,0 +1,123 @@
+.input-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-icon svg {
+  color: #6447bc;
+  font-size: 1.1rem;
+}
+
+.input-icon input,
+.input-icon select {
+  flex: 1;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+}
+
+
+/* Quiz.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef1f8, #dfe6f0);
+}
+
+.quizpref-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom right, #f4f6fc, #e0e7ff);
+}
+
+.quizpref-box {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.quizpref-box h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+.quizpref-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.quizpref-form input,
+.quizpref-form select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.quizpref-form input:focus,
+.quizpref-form select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(100, 71, 188, 0.2);
+  border-color: #6447bc;
+}
+
+.quizpref-button {
+  background-color: #6447bc;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quizpref-button:hover {
+  background-color: #5744c6;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quizpref-box {
+    padding: 30px 20px;
+  }
+
+  .quizpref-box h2 {
+    font-size: 1.5rem;
+  }
+}
