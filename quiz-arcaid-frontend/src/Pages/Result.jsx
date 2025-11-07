@@ -45,12 +45,11 @@ const Result = () => {
   if (loading) {
     return (
       <>
-      <Navbar/>
+      
       <div className="result-container">
         <Spinner/>
         <div className="text-lg font-semibold">Loading your result...</div>
       </div>
-      <Footer/>
       </>
     );
   }
@@ -58,11 +57,11 @@ const Result = () => {
   if (!result) {
     return (
       <>
-      <Navbar/>
+    
       <div className="result-container">
         <div className="text-lg font-semibold">No result found.</div>
       </div>
-      <Footer/>
+     
       </>
     );
   }
@@ -78,7 +77,7 @@ const Result = () => {
 
   return (
     <>
-    <Navbar/>
+  
     <div className="result-container">
       <div className="result-box">
         <h2>🎉 Quiz Completed!</h2>
@@ -141,7 +140,7 @@ const Result = () => {
         </div>
       )}
     </div>
-    <Footer/>
+   
     </>
   );
 };

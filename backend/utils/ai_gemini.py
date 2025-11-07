@@ -16,10 +16,7 @@ def AI_response(prompt):
 
 
 def is_eligible(topic: str) -> bool:
-    """
-    Checks if the model can generate questions on the given topic.
-    Returns True if eligible (1), False otherwise (0).
-    """
+    
     prompt = f"Check whether you can generate questions on the topic '{topic}'. Answer only with 0 or 1."
     model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(prompt)

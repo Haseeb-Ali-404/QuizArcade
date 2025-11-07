@@ -1,5 +1,16 @@
 {
   "dependencies": {
-    "react-markdown": "^10.1.0"
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.80.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "react-markdown": "^10.1.0",
+    "supabase": "^2.54.11",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5"
   }
 }

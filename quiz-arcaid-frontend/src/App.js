@@ -49,25 +49,19 @@ export default function App() {
           <Route
             path="/create-quiz"
             element={
-              <PrivateRoute>
                 <Quiz />
-              </PrivateRoute>
             }
           />
           <Route
             path="/QUIZTEST"
             element={
-              <PrivateRoute>
                 <QuizPage />
-              </PrivateRoute>
             }
           />
           <Route
             path="/result"
             element={
-              <PrivateRoute>
                 <Result />
-              </PrivateRoute>
             }
           />
         </Routes>

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/Quiz.css";
 import axios from "axios";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 import { FaBook, FaListOl, FaClock, FaTachometerAlt } from "react-icons/fa"; // Icons
 import Spinner from "../Components/Spinner";
@@ -66,7 +64,7 @@ const Quiz = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="quizpref-container">
         <div className="quizpref-box">
           <h2>Customize Your Quiz</h2>
@@ -129,7 +127,7 @@ const Quiz = () => {
           </form>
         </div>
       </div>
-      <Footer />
+      
     </>
   );
 };
